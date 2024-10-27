@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+}
+
+
+
+
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+    
+}
+.border-b{
+    align-items: center;
+    border: 2px solid red ;
+}
+.containercard{
+    border: 2px solid grey;
+    background-color: #F0F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+.headdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+}
+.sliderbutton{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.itemapp{
+    border: 3px solid rgb(0, 85, 255) ;
+    border-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px;
+    border-bottom: 10px;
+    margin: 0px;
+}
+.securitypurpose{
+    padding: 0px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    border: 3px solid rgb(0, 85, 255) ;
+    border-radius:11px;
+}
+.tickmarkclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+#pricecolorset{
+color: green;
+font-size: 30px;
+}
+.priceammount{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#includive{
+    opacity: 0.6;
+    margin-top: -10px;
+}
+.priceammoun1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btnhurryup{
+    border: 2px solid black;
+    background-color: #F0A53A;
+    color: white;
+    font-weight: 600;
+    margin-right: 12px;
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#estimatehandle{
+border: 2px solid rgb(22, 7, 7);
+background-color: green;
+height: 43px;
+width: 150px;
+border-radius: 10px;
+font-size: 20px;
+color: white;
+
+}
+.Pincodechecker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  margin-top: 10px;
+}
+.Pincodechecker input{
+    width: 280px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.sizedropdown{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    
+}
+#sizelabel{
+    font-size: 20px;
+}
+#dropdown{
+
+    height: 40px;
+    border-radius: 10px;
+    width:90px;
+}
+.lastbuttn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 80px;
+}
+.btnlast1{
+    border: 2px solid rgb(22, 7, 7);
+height: 43px;
+width: 200px;
+border-radius: 10px;
+font-size: 20px;
+color: #7D32EB;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 5px;
+}
+#router{
+    opacity: 0.7;
+}
+.btnlast2{
+    border: 2px solid rgb(22, 7, 7);
+height: 43px;
+width: 200px;
+border-radius: 10px;
+font-size: 20px;
+color: #e6e0ee;
+display: flex;
+background-color:#7D32EB ;
+justify-content: space-evenly;
+align-items: center;
+padding: 5px;
+}
+.countdowntimer{
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    font-size: 20px;
+}
+#timeleft{
+    color: red;
+}
