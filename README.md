@@ -1,79 +1,124 @@
-# DeliveryApp using React + Vite + Tailwind Css
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules
 
-This is a React-based web application that allows users to:
-1- View a list of available products.
-2- Estimate delivery based on the pincode entered.
-3- Access additional sections for security information and promotional slides.
-# Live Application
-The application is hosted on Vercel and can be accessed https://quick-ship-app.vercel.app/
+# DeliveryApp
+
+DeliveryApp is a React-based application for managing product delivery estimates based on user-selected products and pincode-based logistics. It calculates and displays estimated delivery dates for orders based on various logistics providers and includes a real-time countdown timer for same-day delivery.
 
 # Project Structure
 
-DeliveryApp
-├── public
-│   ├── products.csv
-│   ├── stock.csv
-│   └── pincodes.csv
-├── src
-│   ├── components
-│   │   ├── CountdownTimer.jsx
-│   │   ├── Navbar.jsx
-│   ├── pages
-│   │   ├── ProductList.jsx
-│   │   ├── DeliveryEstimator.jsx
-│   │   ├── SecurityPurpose.jsx
-│   │   ├── SlideItem.jsx
-│   │   └── stylepages.css
-│   ├── utils
-│   │   ├── deliveryUtils.js
-│   │   └── pincodeValidator.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-└── package.json
-
-# Getting Started
-1- Prerequisites
-(i) Node.js (v14 or above)
-(ii) npm
-
-# Steps to Set Up Locally
-1- Clone the Repository:
-git clone https://github.com/your-username/DeliveryApp.git
-cd DeliveryApp
-
-2- Install Dependencies: Make sure you are in the project directory, then install the dependencies:
-npm install
-# or
-yarn install
-
-3- Run the Development Server: Start the Vite development server locally:
-npm run dev
-# or
-yarn dev
-This command starts the application, which you can access by opening http://localhost:3000 in your browser.
-4- Testing CSV Data: Ensure that the CSV files (products.csv, stock.csv, pincode.csv) are correctly placed in the public folder. The application will read data from these files for product availability, stock, and delivery estimations.
-
-
-# Deployment Instructions (Vercel)
-1- Steps to Deploy on Vercel
-Create a Vercel Account: Go to Vercel and create an account 
-2- Import Project from GitHub:
-On the Vercel dashboard, click New Project.
-Select Import Git Repository and choose your DeliveryApp repository.
-3- Configure Build and Deployment Settings:
-Vercel will auto-detect your project settings for a Vite-based app.
-No special environment variables are needed for this setup if all data is in the public folder.
-Vercel should auto-configure the build command to npm run build and output directory to dist.
-Deploy: Click Deploy to initiate the deployment. Once completed, you’ll receive a live URL https://quick-ship-app.vercel.app/
-
-View Live Application: Access the live application through the provided URL for testing.
 
 
 
 
-Currently, two official plugins are available:
+![Screenshot 2024-10-28 195537](https://github.com/user-attachments/assets/95d8bfba-df07-4ce2-9284-f296d4d3223d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Setup React Vite + Tailwind 
+## Step 1: Create a Vite Project:
+
+1. Open your terminal and navigate to the directory where you want to create your project.
+2. Run the following command to create a new Vite project:
+```bash
+npm create vite@latest DeliveryApp -- --template react
+```
+3. Change to the project directory:
+Run the following command 
+```bash
+ cd DeliveryApp
+```
+## Step 2: Install Tailwind CSS
+
+1. Install Tailwind CSS and its dependencies:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+2. Initialize Tailwind CSS:
+Run the following command 
+```bash
+ npx tailwindcss init -p
+```
+## Step 3: Configure Tailwind CSS
+1. Open the tailwind.config.js file and update the content array to include your project files:
+```bash
+ /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+```
+2. Open your main CSS file (typically located at src/index.css) and add the following lines to include Tailwind's base, components, and utilities:
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
+## Step 4: Run the Development Server
+Start the development server locally:
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Open your browser and navigate to http://localhost:5173 (the default port) to see your React app with Tailwind CSS set up.
+
+# Deploying It on Github 
+## Step 1: Initialize Git and Create a Repository
+1. Initialize a Git repository (if you haven’t already):
+```bash
+git init
+```
+2. Add your files to the repository:
+```bash
+git add .
+```
+3. Commit your changes:
+```bash
+git commit -m "Initial commit"
+
+```
+4. Create a new repository on GitHub:
+
+Go to GitHub and create a new repository named DeliveryApp.
+
+5. Link your local repository to GitHub:
+```bash
+git remote add origin https://github.com/guptaravimp/DeliveryApp.git
+```
+## Step 2: Deploy Your App
+1. Run the deploy command:
+```bash
+npm run deploy
+```
+This command will build your app and push the contents of the dist folder to the gh-pages branch of your repository.
+### Step 3: Access Your Deployed App
+1. Open your browser and navigate to
+```bash
+npm run deploy
+```
+
+
+This command will build your app and push the contents of the dist folder to the gh-pages branch of your repository.
+
+## Step 6: Access Your Deployed App
+Open your browser and navigate to:
+https://github.com/<User_name>/QuickShipApp
+
+Documentation Links
+
+For more detailed information, you can refer to the official documentation:
+
+[[Vite Deployment Guide](https://react.dev/learn)](https://v3.vitejs.dev/guide/)
+
+## Host Your Project On vercel 
+1. Go to the Vercel website.
+2. Click on the "Sign Up" button and create an account using GitHub, 
+3. Select The repositiory and Import it 
+4. and after this Deploy it 
+
