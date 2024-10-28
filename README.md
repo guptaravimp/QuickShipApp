@@ -1,8 +1,15 @@
 
 # DeliveryApp
 ## Live Link: https://quick-ship-app.vercel.app/
+### Developed a delivery estimation application using React, Vite, and CSV data files to provide a user-friendlyexperience for product selection and delivery timeline estimates
+
 DeliveryApp is a React-based application for managing product delivery estimates based on user-selected products and pincode-based logistics. It calculates and displays estimated delivery dates for orders based on various logistics providers and includes a real-time countdown timer for same-day delivery.
 
+● Built a scalable delivery app leveraging React and React Router to manage navigation and dynamic data.
+
+● Integrated CSV data with PapaParse for accurate product availability and delivery estimates by pin code.
+
+● Added a countdown timer for same-day cutoff alerts and reusable components for easy navigation and data
 # Project Structure
 
 
