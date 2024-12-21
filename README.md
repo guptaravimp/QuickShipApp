@@ -102,6 +102,10 @@ Go to GitHub and create a new repository named DeliveryApp.
 ```bash
 git remote add origin https://github.com/guptaravimp/DeliveryApp.git
 ```
+7. Push code on Github
+```
+git push origin main
+```
 ## Step 2: Deploy Your App
 1. Run the deploy command:
 ```bash
