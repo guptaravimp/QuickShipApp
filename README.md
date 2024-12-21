@@ -81,20 +81,24 @@ Open your browser and navigate to http://localhost:5173 (the default port) to se
 ```bash
 git init
 ```
-2. Add your files to the repository:
+2. Check the status of all files
+```
+git status
+```
+3. Add your files to the repository:
 ```bash
 git add .
 ```
-3. Commit your changes:
+4. Commit your changes:
 ```bash
 git commit -m "Initial commit"
 
 ```
-4. Create a new repository on GitHub:
+5. Create a new repository on GitHub:
 
 Go to GitHub and create a new repository named DeliveryApp.
 
-5. Link your local repository to GitHub:
+6. Link your local repository to GitHub:
 ```bash
 git remote add origin https://github.com/guptaravimp/DeliveryApp.git
 ```
